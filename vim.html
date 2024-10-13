@@ -1,0 +1,86 @@
+<!DOCTYPE html> <html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8">
+		<!-- Name pending -->
+		<title>Vim as an IDE</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Slow Cat</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+		<article>
+
+		<img src="images/vimlogo.svg"/>
+
+		<h2>Vim as an IDE</h2>
+		<p>
+            This is a guide on how to make vim, a simple text editor, into a 
+			relatively small IDE. I'm going to use some plugins to bring some 
+			functionality like an lsp server, autocompletion and snippets, but 
+			also "vanilla" settings to make the vim experience better.<br>
+
+			btw I'm going to be using Linux for this, but I think it works the 
+			same for Mac. Now, Windows users...<br>
+		</p>
+
+		<h3>Why not NeoVim?</h3>
+		<p>
+            Neovim is pretty much the same, just with extended functionality 
+			thanks to Lua, which also brings some new (and sometimes better) 
+			plugins. But that also means that you will have to get into some 
+			lua scripting, so it comes more as a personal preference if you 
+			want to deal with vim script or lua.<br>
+		</p>
+
+		<h3>Plugins</h3>
+		<p>
+            The idea is to keep things as simple as possible and reach a level 
+			of "plug-and-play", so this are the plugins that we will be using:
+			<ul>
+				<li>vim-lsp</li>
+				<li>vim-lsp-settings</li>
+				<li>vim-lsp-ale</li>
+				<li>ale</li>
+				<li>asyncomplete</li>
+				<li>asyncomplete-lsp</li>
+				<li>vim-snip</li>
+				<li>vim-snip-integ</li>
+			</ul>
+
+			Added to all this you are also going to need a package manager. Vim 
+			already comes with one pre-installed, but its a little bit difficult 
+			to manage since you will have to install, update and remove every 
+			plugin manually; a package manager does all this things automatically.<br>
+
+			You can find a lot of package managers, but the one the I like the 
+			most is 
+			<a href="https://github.com/junegunn/vim-plug" target="_blank" 
+				rel="noopener noreferrer">Vim Plug</a>.<br>
+		</p>
+
+		<h3>Plug: The package manager</h3>
+
+		<p>
+			To install Plug just paste this code into a terminal...<br>
+			<pre>
+				<code>
+				curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+				</code>
+			</pre>
+		</p>
+
+		</article>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	color: lightgrey;
+	background-color: black;
+}
+
+body {
+    margin: 5% auto;
+    width: 720px;
+}
+
+h1 {
+	text-align: center;
+}
