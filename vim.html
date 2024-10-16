@@ -1,6 +1,6 @@
 <!DOCTYPE html> <html lang="en">
 	<head>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="styles/style.css" />
 		<meta charset="UTF-8">
 		<!-- Name pending -->
 		<title>Vim as an IDE</title>
@@ -42,7 +42,7 @@
 			lua scripting, so it comes more as a personal preference if you 
 			want to deal with vim script or lua.<br>
 		</p>
-
+        <hr>
 		<h3>Plugins</h3>
 		<p>
             The idea is to keep things as simple as possible and reach a level 
@@ -68,17 +68,16 @@
 			<a href="https://github.com/junegunn/vim-plug" target="_blank" 
 				rel="noopener noreferrer">Vim Plug</a>.<br>
 		</p>
-
+        <hr>
 		<h3>Plug: The package manager</h3>
 
 		<p>
 			To install Plug just paste this code into a terminal...<br>
-			<pre>
-				<code>
-				curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-				</code>
-			</pre>
+			<code>
+			    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+            </code><br>
+            This should install Plug into your <code>$HOME/.vim/</code> directory
 		</p>
 
 		</article>
