@@ -1,5 +1,6 @@
 * {
 	font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 	color: #cecece;
 	background-color: #1e1e1e;
 }
@@ -7,7 +8,10 @@
 body {
     margin: 5% auto;
     width: 960px;
-    font-size: 18px;
+}
+
+p {
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -31,5 +35,4 @@ div {
 
 code {
     font-family: monospace;
-    font-size: 14px;
 }
