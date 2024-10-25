@@ -3,7 +3,8 @@
 	<head>
 		<link rel="stylesheet" href="styles/style.css" />
 		<meta charset="UTF-8">
-		<!-- Name pending -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon.png">
 		<title>Vim as an IDE</title>
 	</head>
 
@@ -44,7 +45,7 @@
 			want to deal with vim script or lua.<br>
 		</p>
         <hr>
-		<h3>Plugins</h3>
+		<h2>Plugins</h2>
 		<p>
             The idea is to keep things as simple as possible and reach a level 
 			of "plug-and-play", so this are the plugins that we will be using:
@@ -70,13 +71,13 @@
 				rel="noopener noreferrer">Vim Plug.</a><br>
 		</p>
         <hr>
-		<h3>Plug: The package manager</h3>
+		<h2>Plug: The package manager</h2>
 
 		<p>
 			To install Plug just paste this code into a terminal...<br>
 			<code>
-			    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+			    curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
+                https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
             </code><br>
             This should install Plug into your <code>$HOME/.vim/</code> directory <br>
 		</p>

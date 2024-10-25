@@ -6,8 +6,13 @@
 }
 
 body {
-    margin: 5% auto;
-    width: 960px;
+    margin: 5% 5%;
+    /*width: 960px;*/
+}
+
+img {
+    display: block;
+    margin: auto;
 }
 
 p {
@@ -19,20 +24,15 @@ h1 {
     font-size: 2em;
 }
 
-ul {
-    list-style-type: circle;
+h2 {
+    font-size: 1.2em;
 }
 
-div {
-    color: #FFF;
-    background-color: #5995DA;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #5D6063;
-    /*border-radius: 5px;*/
+ul {
+    list-style-type: disc;
 }
 
 code {
     font-family: monospace;
+    font-size: 1rem;
 }
