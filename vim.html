@@ -9,11 +9,9 @@
 	</head>
 
 	<body>
-
 		<header>
-			<h1>Slow Cat</h1>
+			<div>Slow Cat</h1>
 		</header>
-
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -22,70 +20,38 @@
 			</ul>
 		</nav>
 		<article>
+            <h1>Simple Vim configuration</h1>
+		    <img src="images/vimlogo.svg"/>
+            <p>Vim is a terminal text editor with powerful motions that allows you to 
+            quickly edit files from the terminal. However, by default it’s really 
+            barebones and lacks some other basic features and settings that other 
+            text editors have. This guide will show you how to easily configure vim 
+            without using plugins.</p>
 
-		<img src="images/vimlogo.svg"/>
+            <h2>What do we need?</h2>
+            <p>Just install vim using your distribution’s package manager 
+            (apt, apk, pacman, etc.), but chances are it’s already installed by default.</p>
+            <p>You can check if it's installed by running the command:</p>
+            <code>$ vim</code>
+            <p>We are going to use Vim to edit Vim, so no need for anything else.</p>
 
-		<h2>Vim as an IDE</h2>
-		<p>
-            This is a guide on how to make vim, a simple text editor, into a 
-			relatively small IDE. I'm going to use some plugins to bring some 
-			functionality like an lsp server, autocompletion and snippets, but 
-			also "vanilla" settings to make the vim experience better.<br>
-
-			btw I'm going to be using Linux for this, but I think it works the 
-			same for Mac. Now, Windows users...<br>
-		</p>
-
-		<h3>Why not NeoVim?</h3>
-		<p>
-            Neovim is pretty much the same, just with extended functionality 
-			thanks to Lua, which also brings some new (and sometimes better) 
-			plugins. But that also means that you will have to get into some 
-			lua scripting, so it comes more as a personal preference if you 
-			want to deal with vim script or lua.<br>
-		</p>
-        <hr>
-		<h2>Plugins</h2>
-		<p>
-            The idea is to keep things as simple as possible and reach a level 
-			of "plug-and-play", so this are the plugins that we will be using:
-			<ul>
-				<li>vim-lsp</li>
-				<li>vim-lsp-settings</li>
-				<li>vim-lsp-ale</li>
-				<li>ale</li>
-				<li>asyncomplete</li>
-				<li>asyncomplete-lsp</li>
-				<li>vim-snip</li>
-				<li>vim-snip-integ</li>
-			</ul>
-
-			Added to all this you are also going to need a package manager. Vim 
-			already comes with one pre-installed, but its a little bit difficult 
-			to manage since you will have to install, update and remove every 
-			plugin manually; a package manager does all this things automatically.<br>
-
-			You can find a lot of package managers, but the one the I like the 
-			most is 
-			<a href="https://github.com/junegunn/vim-plug" target="_blank" 
-				rel="noopener noreferrer">Vim Plug.</a><br>
-		</p>
-        <hr>
-		<h2>Plug: The package manager</h2>
-
-		<p>
-			To install Plug just paste this code into a terminal...<br>
-			<code>
-			    curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
-                https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-            </code><br>
-            This should install Plug into your <code>$HOME/.vim/</code> directory <br>
-		</p>
-
-        <p>
+            <h2>The "vimrc" file</h2>
+            <p>You can run commands in Vim to change certain behavior, remap or add 
+            keybinds, and more, but these commands stop taking effect once you close 
+            the program. In order to make any changes persist, you can add them in a 
+            file called <code>vimrc</code>. The location of this file it’s usually in your 
+            <code>$HOME</code> and should be named <code>.vimrc</code> (yes, as a hidden file).</p>
             
-        </p>
+            <p>If you have never used vim, I recommend typing vimtutor in your terminal 
+            to learn the basics. On top of that, you can check out this website 
+            <a target="_blank" href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript the Hard Way</a>,
+            to learn vimscript too. No need to become an expert, just learn the 
+            basics until you feel comfortable.</p>
 
+            <h2>Interface settings</h2>
+            <p>Let’s start by adding some basic settings that will change the 
+            appearance of vim to make it look more like a text editor:</p>
+            <!-- TODO: add interface settings -->
         </article>
 	</body>
 </html>
