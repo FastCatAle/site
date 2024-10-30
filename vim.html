@@ -51,7 +51,47 @@
             <h2>Interface settings</h2>
             <p>Let’s start by adding some basic settings that will change the 
             appearance of vim to make it look more like a text editor:</p>
-            <!-- TODO: add interface settings -->
+            <code>
+            syntax on<br>
+            set number<br>
+            set splitbelow<br>
+            set splitright<br>
+            set nowrap<br>
+            set cursorline<br>
+            set scrolloff=8<br>
+            set wildmenu<br>
+            set laststatus=2<br>
+            set showmode<br>
+            set colorcolumn=80<br>
+            </code>
+
+            <!-- TODO: Add a description for each setting -->
+
+            <h2>Colors</h2>
+            <p>Yes, you don’t need plugins to get colors on Vim. Of course, 
+            if you want you can go ahead and download your favorite color scheme, 
+            but I would advise you to first try the ones that come pre-installed with vim.</p>
+            <p>Use the vim command <code>:colorscheme</code> and press TAB to cycle 
+            through all the options (there are a lot of them!). However, many of them suck 
+            if I’m being honest and the only two that I like are habamax and sorbet. 
+            Since colorschemes are super easy to install and don’t require updates, 
+            you can just use your favorite one. Here’s are some popular ones:</p>
+            <ul>
+                <li><a href="https://github.com/morhetz/gruvbox" target="_blank">Gruvbox</a></li>
+                <li><a href="https://github.com/folke/tokyonight.nvim" target="_blank"  >Tokyo Night</a></li>
+                <li><a href="https://github.com/dracula/vim" target="_blank">Dracula</a></li>
+                <li><a href="https://github.com/rose-pine/vim" target="_blank">Rosé Pine</a></li>
+                <li><a href="https://github.com/catppuccin/vim" target="_blank">Catppuccin</a></li>
+            </ul>
+            <p>There are a lot more, too many in fact, but if you still want to check more options go to 
+            <a href="https://vimcolorschemes.com/" target="_blank">vimcolorschemes</a> for the (almost) full collection.</p>
+            <p>Now that you have your favorite color scheme, let’s add it to the 
+            configuration file. For this example I’m gonna be using habamax with a dark background:</p>
+            <code>
+            set termguicolors<br>
+            set background=dark<br>
+            colorscheme habamax<br>
+            </code>
         </article>
 	</body>
 </html>
