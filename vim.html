@@ -9,15 +9,16 @@
 	</head>
 
 	<body>
+        <!--<script src="scripts/hello.js"></script-->
 		<header>
-			<div>Slow Cat</h1>
+			<div class="title">Slow Cat</div>
 		</header>
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Articles</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
+            <div>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="#">Articles</a></div>
+                <div><a href="#">About</a></div>
+            </div>
 		</nav>
 		<article>
             <h1>Simple Vim configuration</h1>
@@ -91,6 +92,29 @@
             set termguicolors<br>
             set background=dark<br>
             colorscheme habamax<br>
+            </code>
+
+            <h2>Behavior</h2>
+            <p>At this point we can unlock the potential of Vim by adding keymaps, 
+            which essentially are actions tied to certain keybinds. For example, 
+            Vim comes with a built-in file explorer called Netrw, that allows you 
+            to create and delete files and directories. You can access this file explorer 
+            by typing the command <code>:Explore</code> or <code>:Ex</code>. 
+            You can learn more about it by typing <code>:h netrw</code>. Because typing the 
+            same command every time we want to open Netrw can become tedious, we can create 
+            a keymap that will run the command when certain keys are pressed.</p>
+            <p>For the purpose of adding keymaps that don’t interfere with other ones, 
+            you can assign a “leader key” that when pressed lets you use custom keybinds. 
+            To do this you can add the the vimrc:</p>
+            <code>
+            let mapleader = “ “<br>
+            </code>
+            <p>It’s common to use SPACE as your leader key since in normal mode it doesn’t do anything. 
+            You could technically use any other key, but I would personally recommend 
+            that you stick up with SPACE.</p>
+            <p>With the leader key set, we can now create a keymap that opens Netrw like this:</p>
+            <code>
+            map &lt;leader&gt;p :Ex&lt;Cr&gt;<br>
             </code>
         </article>
 	</body>

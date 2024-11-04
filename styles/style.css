@@ -1,35 +1,29 @@
 * {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    /*font-size: 16px;*/
 	color: #cecece;
 	background-color: #1e1e1e;
 }
 
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 body {
-    margin: 5% 5%;
-    /*width: 960px;*/
+    margin: 5% /*auto*/;
+    width: 960px;
 }
 
 img {
     display: block;
     margin: auto;
-}
-
-p {
-    font-size: 1.1rem;
-}
-
-h1 {
-	text-align: center;
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.2em;
-}
-
-ul {
-    list-style-type: disc;
 }
 
 code {
